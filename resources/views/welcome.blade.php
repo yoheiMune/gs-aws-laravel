@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Gs Lecture - Laravel × AWS
                 </div>
 
                 <div class="links">
