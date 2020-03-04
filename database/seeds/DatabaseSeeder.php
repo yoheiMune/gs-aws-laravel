@@ -11,7 +11,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-
+        // 本.
     	\App\Book::truncate();
 	    \App\Book::insert([
     		'name' => "プログラミングスクールにきたら読もう（過ごし方編）",
@@ -28,5 +28,21 @@ class DatabaseSeeder extends Seeder
 		    'author' => '里田俊介',
 		    'published_at' => '2019-07-10'
 	    ]);
+
+        // 写真.
+        \App\Photo::truncate();
+        \App\Photo::insert([
+            'path' => '1.jpg',
+            'comment' => '険しい山々'
+        ]);
+        \App\Photo::insert([
+            'path' => '2.jpg',
+            'comment' => '壮大な海'
+        ]);
+        \App\Photo::insert([
+            'path' => '3.jpg',
+            'comment' => 'ハリネズミは可愛い'
+        ]);
+
     }
 }

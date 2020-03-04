@@ -16,3 +16,5 @@ Route::get('/', function () {
 });
 
 Route::get('/books', 'BookController@index');
+Route::get('/photos', 'PhotoController@index');
+Route::post('/photos', 'PhotoController@store')->name('photo.store');
